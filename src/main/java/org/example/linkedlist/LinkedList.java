@@ -83,6 +83,15 @@ public class LinkedList {
 
         }
     }
+
+    void insertAtHead(Node data){
+        Node temp = head;
+        data.next = temp;
+        head = data;
+    }
+
+    //Find Middle of a Linked list
+
 }
 
 class main{
@@ -107,6 +116,8 @@ class main{
         l1.deleteAtLast();
         l1.printLinkedList();
         l1.deleteNodeAt(3);
+        l1.printLinkedList();
+        l1.insertAtHead(new Node(0));
         l1.printLinkedList();
 
     }
